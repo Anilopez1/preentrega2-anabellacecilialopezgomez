@@ -345,6 +345,19 @@ p{
 	  "footer footer footer";
 }  
 
+.grid-containerindex {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 0.3fr;
+	grid-template-rows: 0.1fr 1.5fr 0.08fr;
+	gap: 0px;
+	grid-template-areas:
+	  "headerc headerc headerc"
+	  "sectionindex sectionindex asidelat"
+	  "footer footer footer";
+}  
+
 /*FOOTER*/
 footer{
 	width: 100%;
