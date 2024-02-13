@@ -24,7 +24,7 @@ body {
 
 .header{
 	height: 90px;
-	width: 100%;
+	width: 100vw;
 	background-color: #F0F0F0;
 	display: flex;
 	justify-content: space-between;
@@ -126,13 +126,10 @@ nav{
 
 main{
 	display: flex;
-	flex-direction: row;
-	width: 100%;
 }
 
 .p-bienvenidos{
-	height: 100%;
-	width: 60%;
+	width: 89%;
 	position: relative;
 	z-index: 50;
 	display: flex;
@@ -140,7 +137,8 @@ main{
 	justify-content: center;
 	align-items: center;
 	font-family: 'Montserrat', sans-serif;
-}
+	margin-left: 20px;
+}	
 
 #bienvenidos{
 	font-size: 3em;
@@ -149,11 +147,21 @@ main{
 	animation-direction: normal;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
+	margin: auto;
+}
+
+.bienvenidos{
+	margin: auto;
+	width: 45%;
+}
+
+.bar_bienve{
+	width: 40%;
 }
 
 .bar_bienve p{
     width: 100%;
-	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .backg{
@@ -194,14 +202,6 @@ main{
 	100%{
 		color: #494949;
 	}
-}
-
-/*ARTICLE*/
-
-article{
-	width: 90%;
-	margin-right: 0px;
-	padding-right: 0px;
 }
 
 h1{
@@ -265,22 +265,6 @@ p{
 
 /*aside*/
 
-#prefooteraside{
-	width:10vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.prefooter{
-	width: 10%;
-	display: flex;
-	flex-direction: column;
-	justify-self: flex-end;
-	margin-right: 0px;
-	margin-top: 0px;
-}
 
 /*boton arriba*/
 
@@ -509,19 +493,21 @@ iframe{
 
 .maing{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .sectiongal{
 	width: 90vw;
-	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	margin: auto;
 }
 
 .articletext{
-	width: 100%;
+	width: 80%;
 	flex-direction: column;
 	justify-content: flex-start;
+	margin-left: 20px;
 }
 
 .articletext h2{
@@ -543,7 +529,7 @@ iframe{
 }
 
 .articlegal{
-	width: 100%;
+	width: 90vw;
 	display: flex;
 	margin: auto;
 	justify-content: space-between;
@@ -556,13 +542,31 @@ iframe{
 }
 
 .articlegal a img{
-	width: 100%;
+	width: 90%;
 	height: auto;
 }
 
+.asideg{
+	width:10vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.redes{
+	width: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-self: center;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+
 @media screen and (max-width : 580px){
 	
-	header{
+	.header{
 		height: 65px;
      	top: 0;
 		display: flex;
@@ -639,7 +643,7 @@ iframe{
 
 /* index */
 
-	.mainindex{
+	.main{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -657,17 +661,10 @@ iframe{
 		font-size: 2.5em;
 		text-align: center;
 	}
-
-	#sectionindex{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-top: 30px;
-	}
 	
 	.backg{
 		width: 100%;
-		height: 100vh;
+		height: auto;
 	}
 
 /* aside */
@@ -682,12 +679,11 @@ iframe{
 	.maing{
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		margin: auto;
 	}
 
 	.sectiongal{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		width: 100vw;
 		margin: auto;
 	}
@@ -696,18 +692,15 @@ iframe{
 		width: 48%;
 	}
 	
-	#prefooteraside{
+	.asidegal{
 		width:100vw;
-		height: 70px;
 		margin-top: 0;
 		margin-bottom: 20px;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
+		justify-content: flex-end;
 	}
 
 	
-	.prefooter{
+	.redes{
 		width: 100%;
 		display: flex;
 		flex-direction: row;
