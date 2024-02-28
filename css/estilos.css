@@ -35,21 +35,21 @@ header{
 	animation-name: logo;
 	animation-duration: 8s;
 	animation-timing-function:linear;
-	background-image:url("/img/logo1-4.png");
+	background-image:url("../img/logo1-4.png");
 	background-repeat: no-repeat;
 	background-position:flex-start;
 }
 
 @keyframes logo{
-	0% {background-image: url("/img/logo1-0.png");
+	0% {background-image: url("../img/logo1-0.png");
 	}
-	25% {background-image: url("/img/logo1-1.png");
+	25% {background-image: url("../img/logo1-1.png");
 	}
-    50% {background-image: url("/img/logo1-2.png");
+    50% {background-image: url("../img/logo1-2.png");
 	}
-    75% {background-image: url("/img/logo1-3.png");
+    75% {background-image: url("../img/logo1-3.png");
 	}
-	100% {background-image: url("/img/logo1-4.png");
+	100% {background-image: url("../img/logo1-4.png");
 	}
 }
 
@@ -63,12 +63,6 @@ header label{
 header label:hover{	
 	cursor: pointer;
   	background: rgba(0,0,0,0.1);
-}
-
-.logo img{
-	padding: 15px 23px;
-	height: 80%;
-	width: 80%;
 }
 
 .navegacion{
