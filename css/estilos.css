@@ -32,6 +32,25 @@ body {
 	border-bottom: 1px solid #8f4bb0;
 	box-shadow: 5px 0 10px rgba(0,0,0, .6);
 	position: sticky;
+	animation-name: logo;
+	animation-duration: 8s;
+	animation-timing-function:linear;
+	background-image:url("/img/logo1-4.png");
+	background-repeat: no-repeat;
+	background-position:flex-start;
+}
+
+@keyframes logo{
+	0% {background-image: url("/img/logo1-0.png");
+	}
+	25% {background-image: url("/img/logo1-1.png");
+	}
+    50% {background-image: url("/img/logo1-2.png");
+	}
+    75% {background-image: url("/img/logo1-3.png");
+	}
+	100% {background-image: url("/img/logo1-4.png");
+	}
 }
 
 header label{
