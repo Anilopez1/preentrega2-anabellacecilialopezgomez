@@ -23,7 +23,7 @@ body {
 /* header */
 
 header{
-	height: 90px;
+	height: 120px;
 	width: 100vw;
 	background-color: #F0F0F0;
 	display: flex;
@@ -63,6 +63,12 @@ header label{
 header label:hover{	
 	cursor: pointer;
   	background: rgba(0,0,0,0.1);
+}
+
+.logo img{
+	padding: 15px 23px;
+	height: 80%;
+	width: 80%;
 }
 
 .navegacion{
