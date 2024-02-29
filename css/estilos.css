@@ -22,24 +22,6 @@ body {
 
 /* header */
 
-header{
-	height: 120px;
-	width: 100vw;
-	background-color: #F0F0F0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid #8f4bb0;
-	box-shadow: 5px 0 10px rgba(0,0,0, .6);
-	position: sticky;
-	animation-name: logo;
-	animation-duration: 8s;
-	animation-timing-function:linear;
-	background-image:url("../img/logo1-4.png");
-	background-repeat: no-repeat;
-	background-position:flex-start;
-}
-
 @keyframes logo{
 	0% {background-image: url("../img/logo1-0.png");
 	}
@@ -65,8 +47,23 @@ header label:hover{
   	background: rgba(0,0,0,0.1);
 }
 
+.logo{
+	width: 130px;
+	height: 104px;
+	animation-name: logo;
+	animation-duration: 6s;
+	animation-timing-function:linear;
+	background-image:url("../img/logo1-4.png");
+	background-repeat: no-repeat;
+}
+
+h1 .logo{
+	width: 40%;
+}
+
 .logo img{
 	padding: 15px 23px;
+
 }
 
 .navegacion{
@@ -74,7 +71,7 @@ header label:hover{
 }
 
 .navegacion nav{
-	width: 100%;
+	width: 60%;
 	margin: 50px auto;
 	justify-content: flex-end;
 }
@@ -222,13 +219,8 @@ main{
 }
 
 h1{
-	font-family: 'Cookie', cursive;
-	font-size: 2.87em;
-	font-weight: 900;
-	font-style: normal;
-	color:#000000;
-	margin-bottom: 2px;
-	margin-top: 0px;
+	margin-left: 20px;
+	width: 40%;
 }
 
 h2{
@@ -337,6 +329,7 @@ footer{
 	align-items: center;
 	background-color:#D5C8EF;
 	grid-area: footer;
+	margin-top: 15 px;
 }
 
 footer p{
@@ -349,7 +342,7 @@ footer p{
 
 .headerc{
 	grid-area: headerc;
-	height: 90px;
+	height: 115px;
 	width: 100%;
 	background-color: #F0F0F0;
 	display: flex;
@@ -508,23 +501,11 @@ iframe{
 
 /*GALERIA*/
 
-.maing{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.sectiongal{
-	width: 90vw;
-	justify-content: center;
-	margin: auto;
-}
-
 .articletext{
-	width: 80%;
+	width: 90vw;
 	flex-direction: column;
 	justify-content: flex-start;
-	margin-left: 20px;
+	margin-left: 30px;
 }
 
 .articletext h2{
@@ -546,11 +527,12 @@ iframe{
 }
 
 .articlegal{
-	width: 90vw;
+	width: 90%;
 	display: flex;
 	margin: auto;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	margin-bottom: 10px;
 }
 
 .articlegal a{
@@ -582,18 +564,32 @@ iframe{
 
 
 @media screen and (max-width : 580px){
+
+	body{
+		font-size: 0.8em;
+	 	width: 100%;
+ 	}
+ 
+ 	main{
+	 	display: flex;
+	 	flex-direction: column;
+ 	}
 	
-	.header{
-		height: 65px;
-     	top: 0;
+	header{
+		height: 80px;
 		display: flex;
-		justify-content: center;
+	}
+
+	.headerc{
+		width: 100%;
+     	top: 0;
+		justify-content: space-around;
 	}
 
 	header label{
       display: block;
     }
-	
+
 	.navegacion{
 		visibility: hidden;
 	}
@@ -620,17 +616,29 @@ iframe{
 	
 	.menu > li > a{
 		padding: 10px 0px 10px 30px;
-		background-color: white;
+		background-color: #d0b2e7;
 		margin: 0px;
 	}
 	
     #btn-hmbg:checked ~ nav{
 		visibility: visible;
     }
+
+	h1{
+		width: 40%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		height: 60px;
+		margin-right: 20px;
+	}
+
+	h1 .logo{
+		height: 80%;
+		}
 	
 	.logo img{
-		width: 60%;
-		height:auto;
+		width: auto;
+		height: 30%;
 	}
 	
 	.submenu{
@@ -660,28 +668,38 @@ iframe{
 
 /* index */
 
-	.main{
+	.mainc{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		width: 100%;
 		}
 	
-	#p-bienvenidos{
+	p #bienvenidos{
 		flex-direction: column;
-		justify-content: flex-end;
-		width: 100%;
-		height: 30%;
+		justify-content: center;
+		width: 80%;
+		text-align: center;
+		margin-bottom: 20px;
 	}
 	
 	#bienvenidos{
 		font-size: 2.5em;
 		text-align: center;
 	}
+
+	.bienvenidos{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
 	
 	.backg{
 		width: 100%;
 		height: auto;
+	}
+
+	#bar_bienve{
+		margin-top: 20px;
 	}
 
 /* aside */
@@ -693,25 +711,22 @@ iframe{
 	
 /*galeria*/
 
-	.maing{
+	.articlegal{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin: auto;
-	}
+		width: 100%;
+		}
 
-	.sectiongal{
-		width: 100vw;
-		margin: auto;
-	}
-
-	#articlegal a{
-		width: 48%;
+	.articlegal a{
+		width: 90%;
+		height: auto;
+		align-items: center;
+		margin: 10px;
 	}
 	
 	.asidegal{
-		width:100vw;
-		margin-top: 0;
+		width:100%;
 		margin-bottom: 20px;
 		justify-content: flex-end;
 	}
@@ -759,6 +774,7 @@ iframe{
 		display: flex;
 		flex-direction: column;
 		margin-top: 10px;
+		width: 100%;
 	}
 
 	.sectioncontacto { 
@@ -767,6 +783,7 @@ iframe{
 		justify-content: center;
 		width: 100vw;
 		margin: auto;
+		margin-bottom: 15px;
 	}
 
 	.sectioncontacto article{
