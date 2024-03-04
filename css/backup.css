@@ -16,7 +16,7 @@
 
 body {
 	font-size: 15px;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -284,25 +284,6 @@ p{
 	right:20px;
 }
 
-/*boton whatsapp*/
-.float{
-	position: fixed;
-	width: 50px;
-	height: 50px;
-	bottom: 45px;
-	right: 10px;
-	background: #25d366;
-	color: #FFF;
-	border-radius: 50px;
-	text-align: center;
-	font-size: 39px;
-	z-index: 100;
-}
-
-.float:hover{
-	background-color: #28e76e;
-}
-
 /* grid */
 
 .grid-container {
@@ -353,7 +334,7 @@ footer p{
 	position: sticky;
 }
 
-.sectioncontacto { 
+.sectioncontacto{ 
 	grid-area: sectioncontacto;
 	align-self: center;
     display: flex;
@@ -475,6 +456,25 @@ iframe{
 	justify-self: flex-end;
 	margin-right: 0px;
 	margin-top: 0px;
+}
+
+/*boton whatsapp*/
+.float{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	bottom: 45px;
+	right: 10px;
+	background: #25d366;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 39px;
+	z-index: 100;
+}
+
+.float:hover{
+	background-color: #28e76e;
 }
 
 /*SOBREMI*/
