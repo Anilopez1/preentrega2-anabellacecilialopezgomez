@@ -192,6 +192,54 @@ main .p-bienvenidos {
   font-family: "Montserrat", sans-serif;
   margin-left: 20px;
 }
+main .sectiongal {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: auto;
+}
+main .sectiongal article {
+  margin: auto;
+}
+main .sectiongal .articlegal {
+  width: 89%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 10px;
+}
+main .sectiongal .articlegal a {
+  width: 23%;
+  margin-top: 2%;
+}
+main .sectiongal .articlegal a img {
+  width: 90%;
+  height: auto;
+}
+main .sectiongal .articletext {
+  width: 90vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+main .sectiongal .articletext h2 {
+  font-size: 2.89em;
+  color: #494949;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  justify-content: flex-start;
+}
+main .sectiongal .articletext h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #494949;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  justify-content: flex-start;
+}
 main .sectioncontacto {
   grid-area: sectioncontacto;
   align-self: center;

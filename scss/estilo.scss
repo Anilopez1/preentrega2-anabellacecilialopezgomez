@@ -200,6 +200,55 @@ main{
         font-family: 'Montserrat', sans-serif;
         margin-left: 20px;
     }
+    .sectiongal{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin: auto;
+        article{
+            margin:auto;
+        }
+        .articlegal{
+            width: 89%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: auto;
+            margin-bottom: 10px;
+            a{
+                width: 23%;
+                margin-top: 2%;
+                img{
+                    width: 90%;
+                    height: auto;
+                }
+            }
+        }
+        .articletext{
+            width: 90vw;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 30px;
+            h2{
+                font-size: 2.89em;
+                color:#494949;
+                margin-bottom: 20px;
+                margin-top: 30px;
+                justify-content: flex-start;
+            }
+            h3{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                font-size: 1.1em;
+                color:#494949;
+                margin-bottom: 20px;
+                margin-top: 30px;
+                justify-content: flex-start;
+            }
+        }
+    }
+
     .sectioncontacto{
         grid-area: sectioncontacto;
         align-self: center;
