@@ -1,0 +1,200 @@
+@media screen and (max-width : 580px){
+
+	body{
+		font-size: 0.8em;
+	 	width: 100vw;
+ 	}
+
+    .grid-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.2fr auto 0.3fr 0.1fr;
+		grid-template-areas:
+		"headerc"
+		"sectioncontacto"
+		"asidelat"
+		"footer";
+	}
+	
+    .headerc{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        top: 0;
+        justify-content: space-around;
+        h1{
+            width:40%;
+        }
+        .logo{
+            height:20%;
+            width:auto;
+            margin: 0px;
+            padding-top:15px;
+            padding-bottom:15px;
+            img{
+                width: auto;
+                height: auto;
+            }
+        }
+        #navfull{
+            width: 55%;
+            label{
+                display: block;
+            }
+            #btn-hmbg:checked ~ nav{
+                visibility: visible;
+            }
+            .navegacion{
+                width: 60%;
+                visibility: hidden;
+                ul{
+                    z-index: 100;
+                }
+                .menu{
+                    position: absolute;
+                    top: 80px;
+                    left: 0;
+                    width: 100%; 
+                    ul{
+                        display: block;
+                        background: #353535;
+                        li{
+                            &:hover{
+                                ul{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    >li{
+                        display: block;
+                        >a{
+                            padding: 10px 0px 10px 30px;
+                            background-color: #d0b2e7;
+                            margin: 0px;
+                        }
+                    }
+                }
+                .submenu{
+                    z-index: 1000;
+                }
+            }
+        }
+    }
+    .backg{
+		width: 100%;
+		height: auto;
+	}
+
+    .mainc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+        width: 100%;
+        .p-bienvenidos{
+            flex-direction: column;
+            justify-content: center;
+            width: 80%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sectioncontacto { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100vw;
+            margin: auto;
+            margin-bottom: 15px;
+            article{
+                margin: auto;
+            }
+            .bienvenidos{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .bar_bienve{
+                margin-top: 20px;
+                p{
+                    width: auto;
+                    height: auto;
+                    margin: auto;
+                }
+            }
+            .bar_der{
+                width: 80%;
+                margin-top: 20px;
+            }
+            #bar_izq{
+                width: 80%;
+                margin: auto;
+                img{
+                    width: auto;
+                    height: auto;
+                }
+            }
+            #form{
+                width: 80%;
+                margin: auto;
+            }
+            #mapa{
+                width: 80%;
+                height: auto;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                iframe{
+                    width: 100%;
+                }
+            }
+            .articlegal{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                a{
+                    width: 60%;
+                    height: auto;
+                    align-items: center;
+                    margin: 10px;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+        .asidelat{
+            width:100vw;
+            height: 70px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .redesc{
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+                height: 40px;
+            }
+        }
+    }
+    footer{
+		width: 100%;
+		height: 45px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color:#D5C8EF;
+        p{
+            font-size: 0.69em;
+            text-align: center;
+            margin: auto;
+        }
+	}
+	
+	.whatsapp{
+		position:fixed;
+		bottom: 20px;
+		right: 10px;
+	}
+}

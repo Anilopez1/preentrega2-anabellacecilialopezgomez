@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 15px;
+	background-color: #ebcdf6;
+	font-family: 'Montserrat', sans-serif;
+	.grid-container {
+		width: 100%;
+		height: 100vh;
+		display: grid;
+		grid-template-columns: 1fr 1fr 0.3fr;
+		grid-template-rows: 0.09fr 1.5fr 0.08fr;
+		gap: 0px;
+		grid-template-areas:
+		  "headerc headerc headerc"
+		  "sectioncontacto sectioncontacto asidelat"
+		  "footer footer footer";
+	}
+}

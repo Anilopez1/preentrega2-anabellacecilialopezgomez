@@ -1,0 +1,108 @@
+.headerc{
+    grid-area: headerc;        
+    height: 115px;
+    width: 100vw;
+    background-color: #f8e6f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #8f4bb0;
+    box-shadow: 5px 0 10px rgba(0,0,0, .6);
+    position: sticky;
+    label{
+        font-size: 2em;
+        width: 30px;
+        height: 30px;
+        display: none;
+        &:hover{
+        cursor: pointer;
+        background: rgba(0,0,0,0.1);
+        }
+    } 
+    #btn-hmbg{
+        display: none;  
+    }
+    h1{
+        width: 40%;
+    }
+    .logo{
+        width: auto;
+        height: 80%;
+        margin: 50px;
+        animation-name: logo;
+        animation-duration: 6s;
+        animation-timing-function:linear;
+        background-image:url("../img/logo1-4.png");
+        background-repeat: no-repeat;
+        @keyframes logo{
+            0% {background-image: url("../img/logo1-0.png");
+            }
+            25% {background-image: url("../img/logo1-1.png");
+            }
+            50% {background-image: url("../img/logo1-2.png");
+            }
+            75% {background-image: url("../img/logo1-3.png");
+            }
+            100% {background-image: url("../img/logo1-4.png");
+            }    
+            }
+        img{
+            padding: 15px 23px;
+        }
+    }
+    #navfull{
+        width: 60%;
+        .navegacion{
+            visibility: visible;
+            width: 100%;
+            margin: 50px auto;
+            justify-content: flex-end;
+            ul{
+                list-style: none;
+            }
+            .menu{
+                li{
+                    position: relative;
+                    display: inline-block;
+                    min-width: 200px;
+                    &:hover{ 
+                        .submenu{
+                        visibility: visible;
+                        opacity: 1;
+                        }
+                    }
+                    a{
+                        display: block;
+                        color: #434242;
+                        font-family: 'Montserrat', sans-serif;
+                        text-decoration: none;
+                        margin: 0 15px;
+                        &:hover{
+                        color: #9f49d8;
+                        transition: all .3s;    
+                        }
+                    }
+                }          
+            }
+            .submenu{
+                position: absolute;
+                background: #7e7e7e;
+                width: 100%;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity 1.5s;
+                li{
+                    a{
+                        display: block;
+                        padding: 15px;
+                        color: #fff;
+                        width:auto;
+                        font-family: 'Montserrat', sans-serif;
+                        text-decoration: none;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
