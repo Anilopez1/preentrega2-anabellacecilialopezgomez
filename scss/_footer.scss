@@ -6,9 +6,10 @@ footer{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color:#D5C8EF;
+	background-color:#d5c8ef;
 	grid-area: footer;
 	margin-top: 15 px;
+	position: absolute;
     p{
         font-size: 0.69em;
 		text-align: center;

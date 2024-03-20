@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<lang="es">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>404: Studio AC, Graphic Design</title>
+	<title>Studio AC, Graphic Design: Error 404 Página No Encontrada</title>
 	<!-- Meta etiquetas para SEO -->
 	<meta name="description" content="¡Opsss! Si estas aquí es porque algo malo ocurrió">
 	<meta name="keywords" content="design, web, editorial, html, illustrator, photoshop">
@@ -19,8 +19,8 @@
 	<!-- Meta etiqueta para el autor -->
 	<meta name="author" content="Anabella López Gómez">
 	<!-- Etiqueta de Open Graph para compartir en redes sociales -->
-	<meta property="og:title" content="Index">
-	<meta property="og:description" content="Página inicial donde se da la bienvenida">
+	<meta property="og:title" content="404 - Intereses">
+	<meta property="og:description" content="Error 404!">
 	<meta property="og:url" content="https://anilopez1.github.io/preentrega2-anabellacecilialopezgomez/404.html">
 	<meta property="og:image" content="https://anilopez1.github.io/preentrega2-anabellacecilialopezgomez/404.html">
 	<meta property="og:type" content="website">
@@ -36,19 +36,49 @@
 	<link rel="stylesheet" href="./scss/estilo.css">
     <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
 	<link href="./css/fontello.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-    <main>
-      <section class="d-flex justify-content-center flex-wrap relative w-100 row-gap-3">
-        <div class="d-flex flex-column align-items-center w-50 mt-5 text-center text-light ">
-    
-            <h1 class="fs-60 text-warning-bs">404</h1>
-            <p class="fs-1 ">La página que estás buscando no existe</p>
-            <a href="./index.html"  class="text-warning-bs" title="Volver al inicio">Volver al inicio</a>
-        </div>
-      
-        <img class="img-fluid image-black"src="./assets/img/404_girl.webp" alt="imagen de chica 404" />
+<body class="b404">
+    <header class="headerc">
+		<div class="menu">
+			<a href="index.html"><img src="img/logo1-4.png" width="70px" height="63px" alt="logo"></a>
+			<nav id="navbar">
+				<div class="menuToggle" onclick="toggleMenu()"></div>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="./pages/sobremi.html" >Sobre mi</a></li>
+					<li>
+						<a href="./pages/galeria.html" onclick="dropdown()">Proyectos <ion-icon name="chevron-down-outline"></ion-icon></a>
+						<ul class="dropdown">
+							<li><a href="./pages/galeriaedi.html">Editorial</a></li>
+							<li><a href="#identidad">Identidad</a></li>
+							<li><a href="#web">Web</a></li>
+						</ul>
+					</li>
+					<li><a href="./pages/contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+    <main class="main404">
+      <section class="section404">
+        <article class="error404">
+			<span>4</span>
+			<span>0</span>
+			<span>4</span>
+		</article>
+        <h2>Página no encontrada</h2>
+        <p>¡Ups! Parece que te has perdido en la web. Pero no te preocupes, estoy aquí para ayudarte a encontrar el camino de regreso. ¡Vamos juntos!</p>
+        <a href="./index.html">Regresar <ion-icon name="arrow-forward-outline"></ion-icon></a>
       </section>
     </main>
+    <footer>
+        <p>Desarrollado y diseñado por Anabella López Gómez - www.anilopezdycv.com </p>
+    </footer>
+	<!-- Scripts Librería Ionicons (Íconos) -->
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	
+	<!-- Script index.js -->
+	<script src="./index.js"></script>
 </body>
 </html>

@@ -1,0 +1,142 @@
+.b404 {
+	width: 100%;
+	height: auto;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    overflow-x: hidden;
+        .headerc {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            .menu {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 30px 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: var(--white);
+                nav{
+                    ul {
+                        display: flex;
+                        list-style: none;
+                        li {
+                            &:hover{
+                                .dropdown {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translateY(0px);
+                                }
+                            }
+                            a {
+                                text-decoration: none;
+                                color: var(--black);
+                                font-size: 1em;
+                                transition: 0.3s;
+                                padding: 10px 20px;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                &:hover {
+                                    background: var(--bg-white);
+                                }
+                            }
+                            .dropdown {
+                                display: flex;
+                                position: absolute;
+                                top: 100px;
+                                right: 155px;
+                                flex-direction: column;
+                                gap: 20px;
+                                background: var(--white);
+                                padding: 20px;
+                                border-radius: 10px;
+                                transition: 0.4s;
+                                opacity: 0;
+                                visibility: hidden;
+                                transform: translateY(20px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    .main404 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .section404 {
+            position: relative;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .error404 {
+                span {
+                    font-family: 'Fredoka One', cursive;
+                    font-size: 10em;
+                    padding: 10px;
+                    color: #1b1b1b;
+                    transition: 0.3s;
+                    text-shadow: 
+                    1px 1px 1px #ccc,
+                    1px 2px 1px #ccc,
+                    1px 3px 1px #ccc,
+                    1px 4px 1px #ccc,
+                    1px 5px 1px #ccc,
+                    1px 6px 1px #ccc,
+                    1px 7px 1px #ccc,
+                    1px 8px 1px #ccc,
+                    1px 9px 1px #ccc,
+                    1px 10px 1px #ccc,
+                    1px 18px 6px #100e0e66,
+                    1px 22px 10px #100e0e33,
+                    1px 25px 35px #100e0e33,
+                    1px 30px 60px #100e0e66;
+                }
+            }
+            h2 {
+                color: #1b1b1b;
+                font-family: 'Fredoka One', cursive;
+                font-size: 2em;
+                font-weight: bolder;
+                line-height: 2;
+                margin-bottom: 10px;
+            }
+            p{
+                text-align: center;
+                line-height: 1.7;
+            }
+            a{
+                text-decoration: none;
+                padding: 12px 23px;
+                color: #fff;
+                background: #aa4df1;
+                font-size: 1em;
+                font-weight: 500;
+                border-radius: 10px;
+                margin: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.3s;
+                &:hover{
+                    background: #8616cb;
+                }
+                    ion-icon{
+                        margin-left: 10px;
+                        }
+            }
+        }
+    }
+}
+    

@@ -38,69 +38,72 @@
 	<link href="./css/fontello.css" rel="stylesheet">
 </head>
 <body>
-    <div class="grid-container">
-        <header class="headerc">
-			<h1 class="logo"><a href="index.html">AC</a></h1>
-			<div id="navfull">
-				<input type="checkbox" id="btn-hmbg">
-				<label for="btn-hmbg"><i class="fa fa-bars"></i></label>
-				<nav class="navegacion">
-					<ul class="menu">
-						<li><a href="./index.html">HOME</a></li>
-						<li><a href="./pages/sobremi.html">SOBRE MI</a>
-							<ul class="submenu">
-								<li><a href="#intereses">INTERESES</a></li>
-								<li><a href="#expe">EXPERIENCIA</a></li>
+	<div class="grid-container">
+		<header class="headerc">
+			<div class="menu">
+				<a href="index.html"><img src="img/logo1-4.png" width="70px" height="63px" alt="logo"></a>
+				<nav id="navbar">
+					<div class="menuToggle" onclick="toggleMenu()"></div>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="./pages/sobremi.html" >Sobre mi</a></li>
+						<li>
+							<a href="./pages/galeria.html" onclick="dropdown()">Proyectos <ion-icon name="chevron-down-outline"></ion-icon></a>
+							<ul class="dropdown">
+								<li><a href="./pages/galeriaedi.html">Editorial</a></li>
+								<li><a href="#identidad">Identidad</a></li>
+								<li><a href="#web">Web</a></li>
 							</ul>
 						</li>
-						<li><a href="./pages/galeria.html">PROYECTOS</a>
-							<ul class="submenu">
-								<li><a href="#id">IDENTIDAD</a></li>
-								<li><a href="./pages/galeriaedi.html">EDITORIAL</a></li>
-								<li><a href="#web">WEB</a></li>
-							</ul>
-						</li> 
-						<li><a href="./pages/contacto.html">CONTACTO</a></li>    
+						<li><a href="./pages/contacto.html">Contacto</a></li>
 					</ul>
 				</nav>
 			</div>
-		</header>
-        <div class="backg">
-            <main class="mainc">
-                <div class="p-bienvenidos">
-                    <section class="sectioncontacto">
-                        <article class="bienvenidos">
-                            <p id="bienvenidos">CREAMOS DISEÑOS UNICOS E INOLVIDABLES PARA MARCAS</p>
-                        </article>
-                        <article class="bar_bienve">
-                            <h2>¡BIENVENIDOS!</h2>
-                            <p>Desarrollo e impulso marcas a través del diseño gráfico y la ilustración. Trabajo en branding, identidad visual, packaging y proyectos editoriales.</p>
-                            <p>Busco generar espacio en donde se vincula el diseño, la comunicación y la ilustración. Trabajando desde el concepto hasta la realidad, disfrutando del proceso creativo, para encontrar soluciones que aseguran el éxito de un proyecto.</p>
-                        </article>
-                    </section>
-                </div>
-                <aside class="asidelat">
-                    <div class="redesc">
-                        <a href="https://www.facebook.com/anitaaa.lopez" title="facebook" target="_blank"><img src="./img/facebook.png" width="50" height="50" alt="facebook" /></a>
-                        <a href="https://www.instagram.com/aniiitalopez/" title="instagram" target="_blank"><img src="./img/instagram.png" width="50" height="50" alt="instagram" /></a>
-                        <a href="https://www.behance.net/anilopezg413a" title="behance" target="_blank"><img src="./img/behance.png" width="50" height="50" alt="behance" /></a>
-                        <a href="https://www.linkedin.com/in/anabella-l%C3%B3pez-g%C3%B3mez-7b08a4aa/" title="Linkedin" target="_blank"><img src="./img/linkedin.png" width="50" height="50" alt="linkedin" /></a>
-                    </div> 
-                </aside>
-                <div class="botonarriba">
-                    <a href="#navfull"><img src="./img/arriba.png" alt="arriba" title="arriba"></a>
-                </div>
-            </main>
-        </div>
+		</header>	
+        <main class="mainc">
+			<div class="p-bienvenidos">
+				<section class="sectioncontacto">
+					<article class="bar_img">
+						<div class="inicio__imagenes">
+							<div class="imagenes__imgbox">
+								<img src="./img/ipad.webp" alt="Imagen 1">
+							</div>
+							<div class="imagenes__imgbox">
+								<img src="./img/afiche.png" alt="Imagen 2">
+							</div>
+						</div>
+					</article>
+					<article class="bar_bienve">
+						<h1 class="logo"></h1>
+							<h2 class="bienvenidos">¡BIENVENIDOS!</h2>
+							<p>Studio AC, nació en 2021 cuando finalmente definimos un estilo gráfico y comunicacional dentro de la versatilidad que tiene el diseño y la comunicación.</p>
+							<p>Con el boom digital supimos que la mayor necesidad de las marcas era destacarse cada vez más de su competencia y desarrollar una personalidad fuerte que las ayude a ganar reconocimiento y posicionarse.</p>
+							<p>¡Es por eso que creemos que la identidad de una marca lo es todo!</p>
+					</article>
+				</section>
+			</div>
+			<aside class="asidelat">
+				<div class="redesc">
+					<a href="https://www.facebook.com/anitaaa.lopez" title="facebook" target="_blank"><img src="./img/facebook.png" width="50" height="50" alt="facebook" /></a>
+					<a href="https://www.instagram.com/aniiitalopez/" title="instagram" target="_blank"><img src="./img/instagram.png" width="50" height="50" alt="instagram" /></a>
+					<a href="https://www.behance.net/anilopezg413a" title="behance" target="_blank"><img src="./img/behance.png" width="50" height="50" alt="behance" /></a>
+					<a href="https://www.linkedin.com/in/anabella-l%C3%B3pez-g%C3%B3mez-7b08a4aa/" title="Linkedin" target="_blank"><img src="./img/linkedin.png" width="50" height="50" alt="linkedin" /></a>
+				</div> 
+			</aside>
+			<div class="botonarriba">
+				<a href="#navbar"><img src="./img/arriba.png" alt="arriba" title="arriba"></a>
+			</div>
+		</main>
         <footer>
             <p>Desarrollado y diseñado por Anabella López Gómez - www.anilopezdycv.com </p>
         </footer>
-        <!--JQUERY-->
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <!--FIXED BUTTONS-->
-        <script src="./js/main.js"></script>
-        <!--FONT AWESOME-->
-        <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
-    </div>
+
+		<!-- Scripts Librería Ionicons (Íconos) -->
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+		<!-- Script index.js -->
+		<script src="/js/index.js"></script>
+	</div>
 </body>
 </html>
