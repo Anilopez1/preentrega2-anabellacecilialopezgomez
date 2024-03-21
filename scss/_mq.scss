@@ -3,6 +3,8 @@
 	body{
 		font-size: 0.8em;
 	 	width: 100vw;
+        min-height: 100vh;
+        position: relative;
  	}
 
     .grid-container {
@@ -15,11 +17,12 @@
 		"footer";
 	}
 
-
     header{
-        width: 100%;
+        grid-area: headerc;
+        width: 100vw;
+        height: 89px;
         .menu {
-            padding: 20px 30px;
+            padding: 10px 30px;
             nav {
                 .menuToggle {
                     position: relative;
@@ -37,10 +40,10 @@
                         background-size: 30px;
                     }   
                 }
-                ul{ 
+                ul { 
                     display: none;
                 }
-                &.active{
+                &.active {
                     ul {
                         position: fixed;
                         opacity: 1;
@@ -84,40 +87,27 @@
     .mainc{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
         width: 100vw;
         .p-bienvenidos{
             flex-direction: column;
             justify-content: center;
-            width: 80%;
+            width: 90%;
             text-align: center;
-            margin-bottom: 20px;
-        }
-        .sectioncontacto { 
+            }
+        .sectioncontacto {
+            grid-area: sectioncontacto;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 100vw;
+            width: 90%;
+            height: 100vh;
             margin: auto;
-            margin-bottom: 15px;
+            padding-top: 10px;
             article{
-                margin: auto;
-            }
-            .bar_img{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                .imagenes__imgbox{
-                    align-items: center;
-                }
-            }
-            .bienvenidos{
-                margin-top: 20px;
-                margin-bottom: 20px;
+                margin: 20px;
             }
             .bar_bienve{
+                width: 90%;
                 margin-top: 20px;
                 p{
                     width: auto;
@@ -125,11 +115,18 @@
                     margin: auto;
                 }
             }
+            .bienvenidos{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
             .bar_der{
                 width: 80%;
                 margin-top: 20px;
             }
             #bar_izq{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 width: 80%;
                 margin: auto;
                 img{
@@ -150,11 +147,13 @@
                     width: 100%;
                 }
             }
+        }
+        .sectiongal{
             .articlegal{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                width: 100%;
+                align-items: center;
+                width: 90vw;
                 a{
                     width: 60%;
                     height: auto;
@@ -168,6 +167,7 @@
             }
         }
         .asidelat{
+            grid-area: asidelat;
             width:100vw;
             height: 70px;
             margin-top: 0;
@@ -183,15 +183,49 @@
             }
         }
     }
-    
-	.imagenes__imgbox{
-        &:nth-child(2) {
-        display: none;
+
+    .section404{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin-top: 30px;
+        h2{
+            margin: 30px;
         }
-        &:nth-child(1) {
-            left: 0px;
-            padding: 0px;
+        p{
+            margin: 30px;
         }
+    }
+
+    .sectioncontacto{
+        .bar_img{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .inicio__imagenes{
+                display: flex;
+                flex-direction: column;
+                .imagenes__imgbox{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(1) {
+                        img{
+                            align-items: flex-start;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        } 
     }
 
 	.whatsapp{
@@ -201,25 +235,18 @@
 	}
 
     footer{
-		width: 100%;
+		width: 100vw;
 		height: 45px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		background-color:#D5C8EF;
+        bottom: 0px;
+        grid-area: footer;
         p{
             font-size: 0.69em;
             text-align: center;
             margin: auto;
         }
 	}
-    section{
-        .section404{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        }
-    }
 }

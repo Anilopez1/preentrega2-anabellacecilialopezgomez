@@ -40,29 +40,26 @@
 <body>
 	<div class="grid-container">
 		<header class="headerc">
-			<h1 class="logo"><a href="../index.html"></a></h1>
-			<input type="checkbox" id="btn-hmbg">
-			<label for="btn-hmbg"><i class="fa fa-bars"></i></label>
-			<nav class="navegacion">
-				<ul class="menu">
-					<li><a href="../index.html">HOME</a></li>
-					<li><a href="./sobremi.html">SOBRE MI</a>
-						<ul class="submenu">
-							<li><a href="#intereses">INTERESES</a></li>
-							<li><a href="#expe">EXPERIENCIA</a></li>
-						</ul>
-					</li>
-					<li><a href="./galeria.html">PROYECTOS</a>
-						<ul class="submenu">
-							<li><a href="#id">IDENTIDAD</a></li>
-							<li><a href="./galeriaedi.html">EDITORIAL</a></li>
-							<li><a href="#web">WEB</a></li>
-						</ul>
-					</li> 
-					<li><a href="./contacto.html">CONTACTO</a></li>    
-				</ul>
-			</nav>
-		</header>
+			<div class="menu">
+				<h1><a href="../index.html"><img src="../img/logo1-4.png" width="70px" height="63px" alt="logo"></a></h1>
+				<nav id="navbar">
+					<div class="menuToggle" onclick="toggleMenu()"></div>
+					<ul>
+						<li><a href="../index.html">Inicio</a></li>
+						<li><a href="./sobremi.html" >Sobre mi</a></li>
+						<li>
+							<a href="./galeria.html" onclick="dropdown()">Proyectos <ion-icon name="chevron-down-outline"></ion-icon></a>
+							<ul class="dropdown">
+								<li><a href="./galeriaedi.html">Editorial</a></li>
+								<li><a href="#identidad">Identidad</a></li>
+								<li><a href="#web">Web</a></li>
+							</ul>
+						</li>
+						<li><a href="./contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>	
 		<main class="mainc">
 			<section class="sectiongal">
 				<article class="articletext">
@@ -95,10 +92,14 @@
 		<script src="../js/jquery.fancybox.min.js"></script>
  		<!--JQUERY-->
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
-		<!--FIXED BUTTONS-->
-        <script src="./js/main.js"></script>
         <!--FONT AWESOME-->
-        <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>		
+        <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+		<!-- Scripts Librería Ionicons (Íconos) -->
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+		<!-- Script index.js -->
+		<script src="../js/index.js"></script>	
 	</div>
 </body>
 </html>

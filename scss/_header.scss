@@ -1,28 +1,24 @@
 .headerc{
 	grid-area: headerc;
 	width: 100%;
-    height: 50px;
-	background-color: #ecebec;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 header{
     width: 100%;
-	height: 50px;
+	height: 90px;
 	display: flex;
-	justify-content: center;
+    justify-content: space-between;
 	align-items: center;
+    background-color: #ecebec;
     border-bottom: 1px solid #8f4bb0;
-	box-shadow: 5px 0 10px rgba(0,0,0, .6);
+	box-shadow: 5px 0 10px #00000099;
 	position: sticky;
     .menu {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        padding: 30px 100px;
+        padding: 10px 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;

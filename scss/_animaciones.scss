@@ -1,0 +1,38 @@
+@keyframes logo{
+    0% {background-image: url("../img/logo1-0.png");
+    }
+    25% {background-image: url("../img/logo1-1.png");
+    }
+    50% {background-image: url("../img/logo1-2.png");
+    }
+    75% {background-image: url("../img/logo1-3.png");
+    }
+    100% {background-image: url("../img/logo1-4.png");
+    }
+}
+
+@keyframes bienvenidos{
+    0%{
+        visibility:hidden;
+    }
+    65%{
+        visibility: visible;
+    }
+    100%{
+        color: #494949;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
