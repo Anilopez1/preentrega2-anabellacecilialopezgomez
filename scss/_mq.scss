@@ -3,7 +3,7 @@
 	body{
 		font-size: 0.8em;
 	 	width: 100vw;
-        min-height: 100vh;
+        min-height: 145vh;
         position: relative;
  	}
 
@@ -228,11 +228,18 @@
         } 
     }
 
-	.whatsapp{
+	.float{
 		position:fixed;
-		bottom: 20px;
+		bottom: 45px;
 		right: 10px;
 	}
+
+    .botonarriba{
+        cursor: pointer;
+        position: fixed;
+        bottom: 45px;
+        right: 30px;
+    }
 
     footer{
 		width: 100vw;
