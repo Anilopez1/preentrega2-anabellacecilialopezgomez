@@ -88,12 +88,49 @@
         display: flex;
         flex-direction: column;
         width: 100vw;
+        margin-top: 89px;
         .p-bienvenidos{
             flex-direction: column;
             justify-content: center;
             width: 90%;
             text-align: center;
+            .sectioncontacto{
+                .bar_img{
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .inicio__imagenes{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .imagenes__imgbox{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        top:0;
+                        &:nth-child(2) {
+                            display: none;
+                            left: 0;
+                        }
+                    }                
+                }
+                .bar_bienve{
+                    width: 90%;
+                    margin-top: 20px;
+                    p{
+                        width: auto;
+                        height: auto;
+                        margin: auto;
+                    }
+                }
+                .bienvenidos{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
             }
+        }
         .sectioncontacto {
             grid-area: sectioncontacto;
             display: flex;
@@ -106,19 +143,7 @@
             article{
                 margin: 20px;
             }
-            .bar_bienve{
-                width: 90%;
-                margin-top: 20px;
-                p{
-                    width: auto;
-                    height: auto;
-                    margin: auto;
-                }
-            }
-            .bienvenidos{
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
+            
             .bar_der{
                 width: 80%;
                 margin-top: 20px;
@@ -155,7 +180,7 @@
                 align-items: center;
                 width: 90vw;
                 a{
-                    width: 60%;
+                    width: 90%;
                     height: auto;
                     align-items: center;
                     margin: 10px;
@@ -197,35 +222,6 @@
         p{
             margin: 30px;
         }
-    }
-
-    .sectioncontacto{
-        .bar_img{
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .inicio__imagenes{
-                display: flex;
-                flex-direction: column;
-                .imagenes__imgbox{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    &:nth-child(2) {
-                        display: none;
-                    }
-                    &:nth-child(1) {
-                        img{
-                            align-items: flex-start;
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
-                }
-            }
-        } 
     }
 
 	.float{

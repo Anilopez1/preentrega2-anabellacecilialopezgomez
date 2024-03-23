@@ -79,7 +79,7 @@ html body {
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   font-size: 15px;
   background: linear-gradient(-45deg, #cca7e0, #e0a2ff, #ffffff, #e9cefc);
   background-size: 400% 400%;
@@ -97,7 +97,7 @@ body .grid-container {
 
 .headerc {
   grid-area: headerc;
-  width: 100%;
+  width: 100vw;
 }
 
 header {
@@ -150,7 +150,7 @@ li:hover .dropdown {
 .dropdown {
   display: flex;
   position: absolute;
-  top: 100px;
+  top: 90px;
   right: 155px;
   flex-direction: column;
   gap: 20px;
@@ -177,54 +177,6 @@ main .p-bienvenidos {
   font-family: "Montserrat", sans-serif;
   margin-left: 20px;
 }
-main .sectiongal {
-  display: flex;
-  flex-direction: column;
-  width: 90vw;
-  margin: auto;
-}
-main .sectiongal article {
-  margin: auto;
-}
-main .sectiongal .articlegal {
-  width: 89%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: auto;
-  margin-bottom: 10px;
-}
-main .sectiongal .articlegal a {
-  width: 23%;
-  margin-top: 2%;
-}
-main .sectiongal .articlegal a img {
-  width: 90%;
-  height: auto;
-}
-main .sectiongal .articletext {
-  width: 90vw;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 30px;
-}
-main .sectiongal .articletext h2 {
-  font-size: 2.89em;
-  color: #494949;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  justify-content: flex-start;
-}
-main .sectiongal .articletext h3 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 1.1em;
-  color: #494949;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  justify-content: flex-start;
-}
 main .sectioncontacto {
   grid-area: sectioncontacto;
   align-self: center;
@@ -246,19 +198,19 @@ main .sectioncontacto .bar_img .inicio__imagenes {
   align-items: center;
   justify-content: space-between;
 }
-main .sectioncontacto .bar_img .inicio__imagenes .imagenes__imgbox {
+main .sectioncontacto .bar_img .imagenes__imgbox {
   position: relative;
   width: 300px;
   height: 450px;
-  border: 2px solid var(--brown);
-  background-color: var(--cream);
+  border: 2px solid #d476d7;
+  background-color: #eadde9;
 }
-main .sectioncontacto .bar_img .inicio__imagenes .imagenes__imgbox:nth-child(1) {
-  top: 70px;
-  left: 50px;
+main .sectioncontacto .bar_img .imagenes__imgbox:nth-child(1) {
+  top: 60px;
+  left: 30px;
   z-index: 1;
 }
-main .sectioncontacto .bar_img .inicio__imagenes .imagenes__imgbox img {
+main .sectioncontacto .bar_img .imagenes__imgbox img {
   position: absolute;
   top: 0;
   left: 0;
@@ -401,20 +353,23 @@ main .sectioncontacto #mapa {
 main .sectioncontacto #mapa iframe {
   width: 100%;
 }
-main .sectioncontacto .articletext {
+main .sectiongal {
   width: 90vw;
+}
+main .sectiongal .articletext {
+  width: 95%;
   flex-direction: column;
   justify-content: flex-start;
   margin-left: 30px;
 }
-main .sectioncontacto .articletext h2 {
+main .sectiongal .articletext h2 {
   font-size: 2.89em;
   color: #494949;
   margin-bottom: 20px;
   margin-top: 30px;
   justify-content: flex-start;
 }
-main .sectioncontacto .articletext h3 {
+main .sectiongal .articletext h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.1em;
@@ -423,20 +378,21 @@ main .sectioncontacto .articletext h3 {
   margin-top: 30px;
   justify-content: flex-start;
 }
-main .sectioncontacto .articlegal {
-  width: 89%;
+main .sectiongal .articlegal {
+  width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: auto;
   margin-bottom: 10px;
+  padding-left: 30px;
 }
-main .sectioncontacto .articlegal a {
+main .sectiongal .articlegal a {
   width: 23%;
   margin-top: 2%;
 }
-main .sectioncontacto .articlegal a img {
+main .sectiongal .articlegal a img {
   width: 90%;
   height: auto;
 }
@@ -452,7 +408,7 @@ main .asidelat .redesc {
   width: 10%;
   display: flex;
   flex-direction: column;
-  justify-self: flex-end;
+  justify-self: center;
   margin-right: 0px;
   margin-top: 0px;
 }
@@ -473,7 +429,7 @@ main .asidelat .redesc {
 .botonarriba {
   cursor: pointer;
   position: fixed;
-  bottom: 30px;
+  bottom: 45px;
   right: 30px;
 }
 
@@ -556,7 +512,7 @@ footer p {
   body {
     font-size: 0.8em;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 145vh;
     position: relative;
   }
   .grid-container {
@@ -628,12 +584,47 @@ footer p {
     display: flex;
     flex-direction: column;
     width: 100vw;
+    margin-top: 89px;
   }
   .mainc .p-bienvenidos {
     flex-direction: column;
     justify-content: center;
     width: 90%;
     text-align: center;
+  }
+  .mainc .p-bienvenidos .sectioncontacto .bar_img {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mainc .p-bienvenidos .sectioncontacto .bar_img .inicio__imagenes {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainc .p-bienvenidos .sectioncontacto .bar_img .imagenes__imgbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+  }
+  .mainc .p-bienvenidos .sectioncontacto .bar_img .imagenes__imgbox:nth-child(2) {
+    display: none;
+    left: 0;
+  }
+  .mainc .p-bienvenidos .sectioncontacto .bar_bienve {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .mainc .p-bienvenidos .sectioncontacto .bar_bienve p {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+  .mainc .p-bienvenidos .sectioncontacto .bienvenidos {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .mainc .sectioncontacto {
     grid-area: sectioncontacto;
@@ -647,19 +638,6 @@ footer p {
   }
   .mainc .sectioncontacto article {
     margin: 20px;
-  }
-  .mainc .sectioncontacto .bar_bienve {
-    width: 90%;
-    margin-top: 20px;
-  }
-  .mainc .sectioncontacto .bar_bienve p {
-    width: auto;
-    height: auto;
-    margin: auto;
-  }
-  .mainc .sectioncontacto .bienvenidos {
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
   .mainc .sectioncontacto .bar_der {
     width: 80%;
@@ -696,7 +674,7 @@ footer p {
     width: 90vw;
   }
   .mainc .sectiongal .articlegal a {
-    width: 60%;
+    width: 90%;
     height: auto;
     align-items: center;
     margin: 10px;
@@ -735,34 +713,16 @@ footer p {
   .section404 p {
     margin: 30px;
   }
-  .sectioncontacto .bar_img {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .sectioncontacto .bar_img .inicio__imagenes {
-    display: flex;
-    flex-direction: column;
-  }
-  .sectioncontacto .bar_img .inicio__imagenes .imagenes__imgbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .sectioncontacto .bar_img .inicio__imagenes .imagenes__imgbox:nth-child(2) {
-    display: none;
-  }
-  .sectioncontacto .bar_img .inicio__imagenes .imagenes__imgbox:nth-child(1) img {
-    align-items: flex-start;
-    width: 100%;
-    height: auto;
-  }
-  .whatsapp {
+  .float {
     position: fixed;
-    bottom: 20px;
+    bottom: 45px;
     right: 10px;
+  }
+  .botonarriba {
+    cursor: pointer;
+    position: fixed;
+    bottom: 45px;
+    right: 30px;
   }
   footer {
     width: 100vw;
